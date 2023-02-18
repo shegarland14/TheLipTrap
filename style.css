@@ -81,36 +81,44 @@ main{
 .products{
     width:100%;
     max-width:100%;
-    background-color: #F3CFD1;  
+    background-color: #F3CFD1; 
+    border: 1px solid #FF006E;
+
 }
 .heading{
-    height: 100px;
-    border: 1px solid #FF006E
+
 }
 .products h1{
     text-align: center;
     padding-top:20px;
     font-size: 50px;
     color:#FF006E;
+    font-family: sans-serif;
 }
 .product-container{
-    overflow: hidden;
     width:100%;
     max-width: 100%;
-    padding:0;
+    padding-left:20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
 }
-.prod-col1{
+.prod-col1 img{
+    display:block;
+    padding:20px;
    
     
 }
-.prod-col2{
-  
+.prod-col2 img{
+    display:block;
+    padding:20px;
+
 }
-.prod-col3{
-    
+.prod-col3 img{
+    display:block;
+    padding:20px;
 }
+
 
 /* ---------------------ABOUT US-------------------*/
 .about-us{
@@ -141,10 +149,9 @@ main{
     
 }
 .image img{
-    margin-right: 
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
 
     header{
      height: 200px;  
@@ -167,37 +174,9 @@ main{
    .columns{ 
     display: block;
     justify-content: center;
-
    }
-   
-}
-
-@media screen and (max-width: 600px)  { 
-   .container{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-   }
-   .logo{
-    padding-top:40px;
-   }
-   
-    .nav ul li{
-        display: none;
-    }
-    .btn-book{
-        display: none;
-    }
-    .about-us{
-        margin: 0px;
-        padding:25px;
-        background-color: #EF931B;
-    }
-    .about .title{
-        font-size: 36px;
-    }
-    .image img{
-        padding-top:25px;
+   .product-container img{
+    width:175px;
     }
     .product-container{
         overflow: hidden;
@@ -205,15 +184,38 @@ main{
         max-width: 100%;
         padding-top: 30px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (maxwidth: 851px) {
-    section{
-        margin:0;
+@media screen and (max-width: 578px) {
+    .nav {
+        display:none;
+          }
+
+    .product-container {
+        width:100%;
+        max-width: 100%;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
-    .about .title{
-        font-size: 36px;
+   
+
+    
+}
+@media screen and (max-width: 480px) {
+    .product-container  {
+        width:100%;
+        max-width: 100%;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
+    .product-container img{
+        width:350px;
+        }
+     .nav {
+         display:none;
+           }
 }
