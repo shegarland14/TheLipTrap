@@ -4,6 +4,173 @@
     
 }
 body{
+    width:100%;
+    max-width: 100%;
     background-color: #240304;
 
+}
+header{
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #EF931B;
+}
+.container{
+    
+    width: 100%;
+    max-width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img .logo{
+    padding-left:50px;
+}
+.nav ul li{
+    display: inline;
+    text-decoration: none;
+    padding:15px;
+    color:#F3CFD1;
+    letter-spacing: 2px;
+}
+ul li:hover{
+    color: #FF006E;
+    transition: 1s;
+    
+
+}
+.btn-book {
+    background-color:#FF006E;
+    height: 48px;
+    color: #EF931B;
+    border: 1px solid #DE4940;
+}
+.btn-book:hover{
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+.nav{
+    padding-right: 50px;
+}
+
+
+/* MAIN/HERO SECTION */
+
+main{
+
+}
+
+/* ---------------------ABOUT US-------------------*/
+section{
+    margin: 40px;
+    padding:25px;
+    background-color: #ef931be8;
+    border: 1px solid #FF006E;
+}
+
+.container_columns{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col1 {
+    width:50%;
+    max-width: 50%;
+}
+.about .title{
+    text-align:center;
+    padding:25px;
+    font-size:72px;
+}
+
+.col2{
+    width: 50%;
+    max-width: 50%;
+    
+}
+.image img{
+    margin-right: 
+}
+
+@media screen and (max-width: 769px) {
+
+    header{
+     height: 200px;  
+    }
+   .container{
+    display: block;
+    align-items: center;
+   }
+   .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+   .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .columns{ 
+    display: block;
+    justify-content: center;
+
+   }
+   
+}
+
+@media screen and (max-width: 600px)  { 
+   .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .logo{
+    padding-top:40px;
+   }
+   
+    .nav ul li{
+        display: none;
+    }
+    .btn-book{
+        display: none;
+    }
+    section{
+        margin: 0px;
+        padding:25px;
+        background-color: #EF931B;
+    }
+    .about .title{
+        font-size: 36px;
+    }
+    .image img{
+        padding-top:25px;
+    }
+}
+
+@media screen and (maxwidth: 851px) {
+    section{
+        margin:0;
+    }
+    .about .title{
+        font-size: 36px;
+    }
 }
