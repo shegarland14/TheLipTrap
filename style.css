@@ -76,9 +76,44 @@ a:active {
 main{
 
 }
+/* ---------------------PRODUCTS PAGE-------------------*/
+
+.products{
+    width:100%;
+    max-width:100%;
+    background-color: #F3CFD1;  
+}
+.heading{
+    height: 100px;
+    border: 1px solid #FF006E
+}
+.products h1{
+    text-align: center;
+    padding-top:20px;
+    font-size: 50px;
+    color:#FF006E;
+}
+.product-container{
+    overflow: hidden;
+    width:100%;
+    max-width: 100%;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.prod-col1{
+   
+    
+}
+.prod-col2{
+  
+}
+.prod-col3{
+    
+}
 
 /* ---------------------ABOUT US-------------------*/
-section{
+.about-us{
     margin: 40px;
     padding:25px;
     background-color: #ef931be8;
@@ -153,7 +188,7 @@ section{
     .btn-book{
         display: none;
     }
-    section{
+    .about-us{
         margin: 0px;
         padding:25px;
         background-color: #EF931B;
@@ -163,6 +198,14 @@ section{
     }
     .image img{
         padding-top:25px;
+    }
+    .product-container{
+        overflow: hidden;
+        width:100%;
+        max-width: 100%;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
     }
 }
 
